@@ -24,6 +24,6 @@
 <span aria-hidden="true">@@@#@@@#@@#@#@###@@@@@@@@@@@@####@@@##@@#@@@@##@@  <span> 5</span></span>
 <span aria-hidden="true">@@@#@@@@@#@@##@@@@@@@@#@#@#@@@@@#@@@@#@##@##@@@@@  <span> 4</span></span>
 <span aria-hidden="true">@@@##@@#@@@@@##@@@@##|@@@@@@@@##@@@@@@@@#@@@@@@@@  <span> 3</span></span>
-<span aria-hidden="true">@@@@#@@##@#@@#@#@#@@#@@@@@#@####@@@@#@@@@#@#@@#@@  <span> 2</span></span>
+<a aria-label="Day 2, two stars" href="Day%202"><span>-~------'</span><span>    ~    ~ </span><span>'--~-----~-~----___________--</span>  <span> 2</span> <span>*</span><span>*</span></a>
 <a aria-label="Day 1, two stars" href="Day%201/"><span>  ~    ~  ~      ~     ~ ~   ~     ~  ~  ~   ~     <span> 1</span> <span>*</span><span>*</span></a>
 </pre>

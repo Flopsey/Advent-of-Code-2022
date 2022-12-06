@@ -1,15 +1,14 @@
-score1 = 0
-score2 = 0
+def calc_score(opponent, response):
+    return (response + 1) + (((response - opponent + 1) % 3) * 3)
+
+
+score1 = score2 = 0
 with open('input', 'r') as f:
     for line in f:
         opponent, col2 = line.split()
         opponent = ord(opponent) - ord('A')
         col2 = ord(col2) - ord('X')
-        response1 = col2
-        response2 = (opponent + (col2 - 1)) % 3
-        score1 += response1 + 1
-        score2 += response2 + 1
-        score1 += ((response1 - opponent + 1) % 3) * 3
-        score2 += ((response2 - opponent + 1) % 3) * 3
+        score1 += calc_score(opponent, col2)
+        score2 += calc_score(opponent, (opponent + (col2 - 1)) % 3)
 print(score1)
 print(score2)

@@ -66,4 +66,12 @@ with open('input', 'r') as f:
                             case [size, abc]:
                                 if abc not in current_directory.children:
                                     current_directory.children[abc] = PlainFile(abc, current_directory, int(size))
+
 print(sum(map(lambda f: f.size, filter(lambda f: isinstance(f, Directory) and f.size <= 100000, root.walk()))))
+
+total = 70000000
+required = 30000000
+unused = total - root.size
+to_delete = required - unused
+candidates = filter(lambda f: isinstance(f, Directory) and f.size >= to_delete, root.walk())
+print(sorted(candidates, key=lambda f: f.size)[0].size)

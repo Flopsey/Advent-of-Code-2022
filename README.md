@@ -19,7 +19,7 @@
 <span aria-hidden="true">@@@@#@@@@#@@##@@@@@@#@#@@@@@##@@@@#@#@@##@@#@##@@  <span>10</span></span>
 <span aria-hidden="true">@@@@#@#@#@@@#@@@#@@@@#@#@@@#@#@##@@@@@#@@#@#@#@##  <span> 9</span></span>
 <span aria-hidden="true">@#@@@#@#@@#@#@#@@##@@#@@@#@@@####@#@@@##@##@#@#|@  <span> 8</span></span>
-<span aria-hidden="true">@@@@@@@###@##@@@@##@@@#@@@@@@@@@#@@@#@@@#@@@@@#@#  <span> 7</span></span>
+<a aria-label="Day 7, one star" href="Day%207">#@#@@@#@@@@.~~.@@##@@@##.@##@@@#@@@#@@@#@@@@@@###  <span> 7</span> <span>*</span></a>
 <a aria-label="Day 6, two stars" href="Day%206">#@@@#@#@##<span>#</span><span>@</span><span>.~~.</span><span>#</span><span>@</span><span>#</span><span>@</span><span>@</span><span>@@</span><span>..</span><span>@</span><span>@</span>@@#@@#@#@@@##@@@#@@@#@  <span> 6</span> <span>*</span><span>*</span></a>
 <a aria-label="Day 5, two stars" href="Day%205">###@@@#@@@<span>#</span><span>#</span><span>@</span><span>.~~.</span><span>@</span><span>#</span><span>.</span><span>/\</span><span>.'</span><span>#</span><span>@</span><span>@</span><span>@</span><span>#</span>#@#@@@@@##@@@#@@@@##  <span> 5</span> <span>*</span><span>*</span></a>
 <a aria-label="Day 4, two stars" href="Day%204">@@@@#@##@<span>#@</span><span>.'</span><span> ~  </span><span>'.</span><span>/\</span><span>'.</span><span>/\</span><span>' .</span><span>#</span><span>@@</span>@@@#@@@#@##@@###@@  <span> 4</span> <span>*</span><span>*</span></a>

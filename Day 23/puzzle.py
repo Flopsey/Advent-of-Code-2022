@@ -1,5 +1,6 @@
 from collections import Counter
 from functools import partial
+import itertools
 
 
 def bounding_box(elves):
@@ -47,7 +48,8 @@ with open('input', 'r') as f:
 # print_elves(elves)
 
 directions = [*"NSWE"]
-for round in range(1, 11):
+prev_elves = elves.copy()
+for round in itertools.count(1):
     proposals = {}
 
     for elf in elves:
@@ -72,8 +74,9 @@ for round in range(1, 11):
                     if all(field not in elves for field in map(partial(neighbor, elf), ['E', 'NE', 'SE'])):
                         proposals[elf] = (elf[0] + 1, elf[1])
                         break
+    proposals_count = Counter(proposals.values())
     for elf in elves.copy():
-        if len(list(filter(lambda field: field == proposals[elf], proposals.values()))) == 1:
+        if proposals_count[proposals[elf]] == 1:
             elves.remove(elf)
             elves.add(proposals[elf])
     # print(f"== End of round {round} ==")
@@ -81,6 +84,12 @@ for round in range(1, 11):
 
     directions.append(directions.pop(0))
 
-bounds = bounding_box(elves)
-total = (bounds[1][0] + 1 - bounds[0][0]) * (bounds[1][1] + 1 - bounds[0][1])
-print(total - len(elves))
+    if round == 10:
+        bounds = bounding_box(elves)
+        total = (bounds[1][0] + 1 - bounds[0][0]) * (bounds[1][1] + 1 - bounds[0][1])
+        print(total - len(elves))
+
+    if elves == prev_elves:
+        print(round)
+        break
+    prev_elves = elves.copy()
